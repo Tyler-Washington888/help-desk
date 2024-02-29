@@ -29,8 +29,8 @@ const getTicketResponses = asyncHandler(async (req, res) => {
 const createTicket = asyncHandler(async (req, res) => {
     let { name, description} = req.body;
 
-    name = req.body?.name ? req.body.name : 'unkown user'
-    description = req.body?.description ? req.body?.description : '' 
+    name = req.body?.name ? req.body.name : 'Unknown user'
+    description = req.body?.description ? req.body.description : '' 
 
     const tickets = await Ticket.find().sort({id: 'desc'})
     const id = tickets.length ? tickets[0].id  + 1 : 1
