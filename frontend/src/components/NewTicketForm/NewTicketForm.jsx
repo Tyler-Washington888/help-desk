@@ -34,22 +34,23 @@ export default function NewTicketForm() {
 
       return (
         <form
+            className='new-ticket-form'
             onSubmit={(e) => {
             e.preventDefault();
             handleCreateTicket();
             }}
          >
-            <div>
-                <div>
-                    <div>Name</div>
-                    <input type="text" name="name" value={name} onChange={handleChange}/>
+            <div className="new-ticket-content-ctn">
+                <div className='new-ticket-content-div'>
+                    <div className='form-names'>Name</div>
+                    <input className='form-input' type="text" name="name" value={name} onChange={handleChange}/>
                 </div>
-                <div>
-                    <div >Description</div>
-                    <input  type="text" name="description" value={description} onChange={handleChange}/>
+                <div className='new-ticket-content-div'>
+                    <div className='form-names'>Description</div>
+                    <input className='form-input' type="text" name="description" value={description} onChange={handleChange}/>
                 </div>
             </div>
-            <button>Submit</button>
+            <button className='new-ticket-btn'> Submit</button>
         </form>
     )
 }
