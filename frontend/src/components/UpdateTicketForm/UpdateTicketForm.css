@@ -1,0 +1,45 @@
+.update-ticket-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 95%;
+    padding-left: 10px;
+}
+
+.update-ticket-content-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.update-ticket-content{
+    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.update-ticket-properies{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.update-ticket-select{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 4px rgba(0, 4, 4, 0.4);
+    font-size: 20px;
+}
+
+.new-ticket-btnn{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 4px rgba(0, 4, 4, 0.4);
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
