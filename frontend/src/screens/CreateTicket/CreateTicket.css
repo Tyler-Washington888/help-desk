@@ -1,0 +1,44 @@
+.create-ticket-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20%;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.admin-panel-ctn{
+    margin-bottom: 2%;
+    padding: 10px 5px ;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 4px rgba(0, 4, 4, 0.4);
+    background-color: white;
+    border-color: transparent;
+}
+
+.admin-panel-ctn:hover {
+    background-color: gray;
+    opacity: 50%;
+  }
+
+.admin-panel-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.new-ticket-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 4px rgba(0, 4, 4, 0.4);
+}
