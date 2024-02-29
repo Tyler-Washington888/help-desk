@@ -40,13 +40,11 @@ export const createTicket = async (newTicket) => {
       }
     }
   };
-  
+
 
   export const updateTicket  = async (id, ticketResponse) => {
     try {
-      console.log(id, ticketResponse)
       const response = await api.put(`/tickets/${id}`, ticketResponse);
-      console.log(response)
       return response.data;
     } catch (error) {
       if (error.response) {
