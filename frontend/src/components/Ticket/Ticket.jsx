@@ -27,19 +27,22 @@ export default function Ticket({index, tickets, setTickets }) {
     }
   
     return (
-        <div>
-            <div >
-                <div >
-                    <div>{tickets[index]?.name}</div>
-                    <div>{tickets[index]?.status}</div>
+        <div className='ticket-ctn'>
+            <div className='ticket-content'>
+                <div className='ticket-name-status-ctn'>
+                    <div className='ticket-name'>{tickets[index]?.name}</div>
+                    <div className='ticket-status'>{tickets[index]?.status}</div>
                 </div>
-                <div >{tickets[index]?.description}</div>
-                <button  onClick={toggleReponseForm}>Respond</button>
+                <div className='ticket-description' >{tickets[index]?.description}</div>
+                <button className='update-ticket-btn' onClick={toggleReponseForm}>Respond</button>
             </div>
-            <div>
-            {responseFormOpen ? <UpdateTicketForm index={index} setTickets={setTickets} tickets={tickets} responseFormOpen={responseFormOpen} setResponseFormOpen={setResponseFormOpen} /> : <div></div>}
+            <div className='update-ticket-ctn'>
+                {responseFormOpen ? 
+                    <UpdateTicketForm index={index} setTickets={setTickets} tickets={tickets} responseFormOpen={responseFormOpen} setResponseFormOpen={setResponseFormOpen} /> 
+                    : 
+                    <div></div>}
             </div>
-            <div>
+            <div className='update-ticket-res-ctn'>
                 {ticketResponses && ticketResponses.length  ? (
                     ticketResponses.map((ticketResponse, index) => {
                         return (
@@ -47,7 +50,7 @@ export default function Ticket({index, tickets, setTickets }) {
                         );
                     })
                 ) : (
-                <div>No Responses</div>
+                <div className='no-responses'>No Responses</div>
                 )}
             </div>
         </div>
