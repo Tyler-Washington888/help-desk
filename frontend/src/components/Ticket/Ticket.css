@@ -29,3 +29,39 @@
 .ticket-name{
     font-size: 18px;
 }
+
+.ticket-status{
+    font-size: 18px;
+}
+
+.ticket-description{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.update-ticket-btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 4px rgba(0, 4, 4, 0.4);
+    background-color: white;
+    font-size: 20px;
+}
+
+.update-ticket-btn:hover{
+    background-color: grey;
+    opacity: 50%;
+}
+
+.update-ticket-ctn{
+    margin-bottom: 20px;
+}
+
+.update-ticket-res-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 20px
+}
