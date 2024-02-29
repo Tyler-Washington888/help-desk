@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 
 export default function AdminPanel({tickets, setTickets}) {
   return (
-    <div>
-        <button>
-            <NavLink to='/'>Home</NavLink>
+    <div className='adminPanel-ctn'>
+        <button className='home-btn'>
+            <NavLink className="home-link" to='/'>Home</NavLink>
         </button>
-        <div >
+        <div className="tickets-ctn">
             {tickets && tickets.length  ? (
                 tickets.map((ticket, index) => {
                     return (
@@ -17,7 +17,7 @@ export default function AdminPanel({tickets, setTickets}) {
                     );
                 })
             ) : (
-                <div>No Tickets have been created</div>
+                <div className='no-tickets'>No Tickets have been created</div>
             )}
         </div>
     </div>
