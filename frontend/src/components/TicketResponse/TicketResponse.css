@@ -1,0 +1,21 @@
+.ticket-res-ctn{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px
+}
+
+.ticket-res-admin-status{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px
+}
+
+.ticket-res-name{
+    font-size: 25px;
+}
+
+.ticket-res-response{
+    font-size: 14px;
+}
