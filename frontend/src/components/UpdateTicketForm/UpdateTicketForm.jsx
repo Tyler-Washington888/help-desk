@@ -33,26 +33,27 @@ export default function UpdateTicketForm({tickets, index}) {
     
     return (
         <form
+            className='update-ticket-form'
             onSubmit={(e) => {
             e.preventDefault();
             handleCUpdateTicket();
             }}
          >
-            <div>
-                <label>
-                    <div>Update Status</div>
-                    <select name="status" value={status} onChange={handleChange}>
+            <div className='update-ticket-content-ctn'>
+                <label className='update-ticket-content'>
+                    <div className='update-ticket-properies'>Update Status</div>
+                    <select className='update-ticket-select' name="status" value={status} onChange={handleChange}>
                         <option value="new">New</option>
                         <option value="in progress">In Progress</option>
                         <option value="resolved">Resolved</option>
                     </select>
                 </label>
-                <label>
-                    <div>Response</div>
-                    <input type="text" name="response" value={response} onChange={handleChange}/>
+                <label className='update-ticket-content'>
+                    <div className='update-ticket-properies'>Response</div>
+                    <input  className='form-input' type="text" name="response" value={response} onChange={handleChange}/>
                 </label>
             </div>
-            <button>
+            <button className='new-ticket-btnn'>
                 Submit
             </button>
         </form>
