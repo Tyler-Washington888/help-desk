@@ -20,7 +20,7 @@ export default function Ticket({index, tickets, setTickets }) {
       };
   
       fetchTicketResponses();
-    }, [ticketResponses, tickets, index ]);
+    }, [ticketResponses, tickets, index]);
 
     function toggleReponseForm() {
         setResponseFormOpen(!responseFormOpen)
