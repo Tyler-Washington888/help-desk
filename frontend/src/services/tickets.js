@@ -55,9 +55,8 @@ export const createTicket = async (newTicket) => {
   
           return error.request.data;
       } else {
-  
+
           return error.message
-  
       }
     }
   };
